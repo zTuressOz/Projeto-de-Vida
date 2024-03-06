@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9&family=Micro+5&display=swap');
+:root{
+    --cor-de-fundo: #1E1E1E;
+    --verde: #6FFF57;
+    --cor-de-texto: #00C6E0;
+    --botao-ativo: #d12405;
+    --texto-ativo: #00C6E0;
+    --botao-inativo: rgba(58, 55, 94, 0.5);
+    --texto-fundo: rgba(58, 55, 94, 0.3);
+    --texto-fundo-mouse: rgba(199, 109, 218, 0.3);
+}
+
+body{
+    background-color: var(--cor-de-fundo);
+    color: var(--cor-de-texto);
+    font-family: "Jacquarda Bastarda 9", serif;
+    font-weight: 400;
+    font-size: 50px;
+    font-style: normal;
+}
+.botao:first-child{
+    border-radius: 40px 40px 0 0;
+}
+
+.botao:last-child{
+    border-radius: 40px 40px 0 0;
+}
+
+.titulo-principal{
+    background-color: var(--texto-fundo);
+    border-bottom: 4px solid var(--texto-ativo);
+    border-right: 4px solid var(--texto-ativo);
+    border-left: 4px solid var(--texto-ativo);
+    border-top: 4px solid var(--texto-ativo);    
+    font-family: "Jacquarda Bastarda 9", serif;
+    text-align: center;
+    width: 70%;
+}
+
+.botao{
+    font-family: "Jacquarda Bastarda 9", serif;
+    color: var(--botao-ativo);
+    font-size: 20px;
+    justify-content: center;    font-family: "Jacquarda Bastarda 9", serif;
+    align-items: center;
+    padding: 1em;
+    border-bottom: 2px solid var(--botao-ativo);
+    border-right: 2px solid var(--botao-ativo);
+    border-left: 2px solid var(--botao-ativo);
+    border-top: 2px solid var(--botao-ativo);
+    width: 100%;
+    display: flex;
+    background-color: var(--texto-fundo); 
+}
+
+.botao:hover{
+    transition: 1.5s;
+    background-color: var(--texto-fundo-mouse);
+    opacity: 0,7;
+    width: 130%;
+}
+
+.botao:last-child{
+    border-radius: 40px 40px 0 0;
+}
+
+ .botao:first-child{
+        border-radius: 40px 40px 0 0;
+    }
+
+.botoes{
+    display: block;
+}
+
+.conteudo-principal{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 768px){
+    .botoes{
+        display: flex;
+    }
+    .botao:first-child{
+        border-radius: 40px 0 0 40px;
+    }
+    
+    .botao:last-child{
+        border-radius:  0 40px  40px 0;
+    }
+
+    .titulo-principal{
+        border-radius: 40px 40px 40px 40px;
+    }
+}
