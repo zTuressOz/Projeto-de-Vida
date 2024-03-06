@@ -3,11 +3,11 @@
     --cor-de-fundo: #1E1E1E;
     --verde: #6FFF57;
     --cor-de-texto: #00C6E0;
-    --botao-ativo: #d12405;
+    --botao-ativo: #f85503;
     --texto-ativo: #00C6E0;
-    --botao-inativo: rgba(58, 55, 94, 0.5);
-    --texto-fundo: rgba(58, 55, 94, 0.3);
-    --texto-fundo-mouse: rgba(199, 109, 218, 0.3);
+    --botao-inativo: linear-gradient(to left, rgba(119, 1, 1, 0.884), rgba(74, 1, 1, 0.591),rgba(119, 1, 1, 0.884), rgba(49, 0, 0, 0.291));;
+    --texto-fundo: linear-gradient(to left, rgba(0, 49, 49, 0.291), rgba(1, 93, 93, 0.591), rgba(0, 49, 49, 0.291));; 
+    --texto-fundo-mouse: rgb(122, 8, 27);
 }
 
 body{
@@ -27,7 +27,7 @@ body{
 }
 
 .titulo-principal{
-    background-color: var(--texto-fundo);
+    background: var(--texto-fundo);
     border-bottom: 4px solid var(--texto-ativo);
     border-right: 4px solid var(--texto-ativo);
     border-left: 4px solid var(--texto-ativo);
@@ -41,7 +41,8 @@ body{
     font-family: "Jacquarda Bastarda 9", serif;
     color: var(--botao-ativo);
     font-size: 20px;
-    justify-content: center;    font-family: "Jacquarda Bastarda 9", serif;
+    justify-content: center;    
+    font-family: "Jacquarda Bastarda 9", serif;
     align-items: center;
     padding: 1em;
     border-bottom: 2px solid var(--botao-ativo);
@@ -50,14 +51,15 @@ body{
     border-top: 2px solid var(--botao-ativo);
     width: 100%;
     display: flex;
-    background-color: var(--texto-fundo); 
+    background: var(--botao-inativo);
 }
 
 .botao:hover{
     transition: 1.5s;
     background-color: var(--texto-fundo-mouse);
-    opacity: 0,7;
+    opacity: 1;
     width: 130%;
+
 }
 
 .botao:last-child{
