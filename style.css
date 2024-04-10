@@ -56,7 +56,7 @@ body{
 }
 
 .botao:hover{
-    transition: 1.5s;
+    transition: 1s;
     background-color: var(--texto-fundo-mouse);
     opacity: 1;
     width: 130%;
@@ -109,13 +109,29 @@ body{
     
 
 .conteudo-principal{
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 1200px;
     width: 100%;
     margin: 0 auto;
 
+}
+
+.contador{
+    display:flex;
+    justify-content: center;
+}
+
+.contador-digito{
+    padding: 0 16px;
+    text-align:center;
+}
+
+.contador-digito-numero{
+    font-size: 80px;
+    margin:0;
 }
 
 @media screen and (min-width: 768px){
@@ -131,3 +147,4 @@ body{
         border-radius: 0 40px 0 0;
     }
 }
+
